@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://127.0.0.1:7218/app19a1bf043c60f692498f180e3771af99/?w=&__subapp__=1 -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];shiny[1.0.5];bootstrap[3.3.7]</script>
+<script src="./json2-min.js(1).download"></script>
+<script src="./jquery.min.js(1).download"></script>
+<link href="./shiny(1).css" rel="stylesheet">
+<script src="./shiny.min.js(1).download"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./bootstrap.min(1).css" rel="stylesheet">
+<script src="./bootstrap.min.js(1).download"></script>
+<script src="./html5shiv.min.js(1).download"></script>
+<script src="./respond.min.js(1).download"></script>  <title>Predict Savings Ratio from Demographic &amp; Economic Indicators</title>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h2>Predict Savings Ratio from Demographic &amp; Economic Indicators</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well">
+          <div class="form-group shiny-input-container">
+            <label for="numPop15">What is the proportion of population under 15?</label>
+            <input id="numPop15" type="number" class="form-control shiny-bound-input" value="30" min="22" max="47" step="1">
+          </div>
+          <div class="form-group shiny-input-container">
+            <label for="numPop75">What is the proportion of population over 75?</label>
+            <input id="numPop75" type="number" class="form-control shiny-bound-input" value="1" min="0.56" max="4.7" step="0.1">
+          </div>
+          <div class="form-group shiny-input-container">
+            <label for="numDpi">What is the per-capita disposable income?</label>
+            <input id="numDpi" type="number" class="form-control shiny-bound-input" value="1000" min="90" max="4000" step="200">
+          </div>
+          <div class="form-group shiny-input-container">
+            <label for="numDdpi">What is the rate of growth of per-capita disposable income?</label>
+            <input id="numDdpi" type="number" class="form-control shiny-bound-input" value="8" min="0.22" max="16.7" step="1">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-8">
+        <div class="tabbable">
+          <ul class="nav nav-tabs" data-tabsetid="3882">
+            <li class="active">
+              <a href="http://127.0.0.1:7218/app19a1bf043c60f692498f180e3771af99/?w=&amp;__subapp__=1#tab-3882-1" data-toggle="tab" data-value="Result">Result</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:7218/app19a1bf043c60f692498f180e3771af99/?w=&amp;__subapp__=1#tab-3882-2" data-toggle="tab" data-value="App Help">App Help</a>
+            </li>
+          </ul>
+          <div class="tab-content" data-tabsetid="3882">
+            <div class="tab-pane active" data-value="Result" id="tab-3882-1">
+              <br>
+              <h4>Predicted Savings Ratio by the Regression Model:</h4>
+              <div id="pred" class="shiny-text-output shiny-bound-output">15.97945</div>
+            </div>
+            <div class="tab-pane" data-value="App Help" id="tab-3882-2">
+              <br>
+              <div id="help" class="shiny-text-output shiny-bound-output"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body></html>
